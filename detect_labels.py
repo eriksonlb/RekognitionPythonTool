@@ -18,7 +18,7 @@ def detect_labels(image_bytes):
 
 
 url = 'https://arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/I7MTIUSZB22PHS5HLBTWYS5SHQ.jpg'
-image = get_image_from_url(url)
+image = get_image_from_file('images/role1.jpeg')
 
 detect_labels(image)
 # detect_labels_data(image)

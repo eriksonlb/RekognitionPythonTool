@@ -2,6 +2,11 @@ import boto3
 from pprint import pprint
 from image_helper import get_image_from_file, get_image_from_url
 
+def facial_analysis_data(image_bytes):
+    client=boto3.client('rekognition')
+    face_resp = client.detect_faces(Image={'Bytes': image_bytes}, Attributes=['ALL'])
+    pprint(face_resp)
+
 def facial_analysis(image_bytes):
     client=boto3.client('rekognition')
     face_resp = client.detect_faces(Image={'Bytes': image_bytes}, Attributes=['ALL'])
@@ -38,4 +43,5 @@ def facial_analysis(image_bytes):
         )
 
 image = get_image_from_file('images/team1.jpeg')
-facial_analysis(image)
+# facial_analysis(image)
+facial_analysis_data(image)

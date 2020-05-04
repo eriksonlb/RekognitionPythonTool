@@ -21,7 +21,7 @@ def recognize_celebrities(image_bytes):
             print (f'Link: {url}\n')
     
 
-url = 'https://arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/I7MTIUSZB22PHS5HLBTWYS5SHQ.jpg'
+url = 'https://static.portaldacidade.com/unsafe/1150x767/https://s3.amazonaws.com/louveira.portaldacidade.com/img/news/2020-01/ex-papa-bento-16-rompe-silencio-sobre-celibato-apos-sinodo-5e1c7b6a41ac4.jpg'
 image = get_image_from_url(url)
-# recognize_celebrities(image)
-recognize_celebrities_data(image)
+recognize_celebrities(image)
+# recognize_celebrities_data(image)
