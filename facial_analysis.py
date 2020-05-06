@@ -43,5 +43,5 @@ def facial_analysis(image_bytes):
         )
 
 image = get_image_from_file('images/team1.jpeg')
-# facial_analysis(image)
-facial_analysis_data(image)
+facial_analysis(image)
+# facial_analysis_data(image)
